@@ -1,0 +1,41 @@
+.element {
+  color: #f0f0f0;
+  line-height: 1.5em;
+  cursor: pointer;
+  padding: .25em .5em;
+  position: relative;
+}
+
+.element--done {
+  color: rgba(255, 255, 255, .5);
+  text-decoration: line-through;
+}
+
+.element:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+.element:hover > .element__delete {
+  visibility: visible;
+}
+
+.element > .element__delete {
+  display: inline-block;
+  color: #d9b310;
+  font-size: 1.5em;
+  transform: scaleY(.55);
+  opacity: .5;
+  visibility: hidden;
+  line-height: 1.5em;
+  vertical-align: middle;
+  margin-right: .3em;
+  margin-top: -2px;
+}
+
+.element > .element__delete:hover {
+  opacity: 1;
+}
+
+.element > .element__name {
+  word-break: break-all;
+}

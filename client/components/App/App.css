@@ -1,0 +1,10 @@
+.app {
+  background: #328cc1;
+  width: 100%;
+  max-width: 400px;
+  padding: 1.2em;
+}
+
+.app__heading {
+  margin: 0 0 .25em;
+}

@@ -1,0 +1,9 @@
+.todo__container {
+  margin: .5em 0;
+}
+
+.todo__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+}
