@@ -33,14 +33,14 @@ export default class TodoNewItem extends React.Component {
 
   render() {
     return (
-      <form className={styles.todoForm} onSubmit={this.handleSubmit}>
+      <form className={styles['todoForm']} onSubmit={this.handleSubmit}>
         <input
-          className={styles.todoForm__input}
+          className={styles['todoForm__input']}
           value={this.state.itemName}
           onChange={this.handleChange}
           placeholder="Add new item..."
         />
-        <button type="submit" className={styles.todoForm__button}>Add</button>
+        <button type="submit" className={styles['todoForm__button']}>Add</button>
       </form>
     );
   }

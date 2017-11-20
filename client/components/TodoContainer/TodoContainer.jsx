@@ -44,9 +44,9 @@ export default class TodoContainer extends React.Component {
       .sort((a, b) => a.done && !b.done)
       .map((item, index) => <TodoElement key={index} item={item} index={index} toggleDone={this.toggleDone} deleteItem={this.handleDelete} />)
     return (
-      <div className={styles.todo__container}>
+      <div className={styles['todo__container']}>
         <TodoNewItem getItem={this.handleNewItem} />
-        <ul className={styles.todo__list}>{elements}</ul>
+        <ul className={styles['todo__list']}>{elements}</ul>
       </div>
     );
   }
